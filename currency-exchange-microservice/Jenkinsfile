@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'mvn-f /var/jenkins_home/workspace/pipeline-jenkins/currency-exchange-microservice/pom.xml test'
             }
         }
     }

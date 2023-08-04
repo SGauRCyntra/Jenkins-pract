@@ -26,9 +26,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn-f /var/jenkins_home/workspace/pipeline-jenkins/currency-exchange-microservice/pom.xml test'
+                sh 'mvn -f /var/jenkins_home/workspace/pipeline-jenkins/currency-exchange-microservice/pom.xml test'
             }
         }
+
     }
     post {
         always {
